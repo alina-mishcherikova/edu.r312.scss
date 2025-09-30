@@ -1,0 +1,33 @@
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s-20);
+}
+.user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &__info {
+    display: flex;
+    flex-direction: row;
+    gap: var(--s-12);
+    align-items: center;
+  }
+  &__avatar {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    border-radius: var(--s-24);
+  }
+}
+.about {
+  &__title {
+    color: var(--color-black-dark);
+    font-size: var(--fs-16);
+    font-weight: bold;
+  }
+  &__position {
+    color: var(--color-black-light);
+    font-size: var(--fs-14);
+  }
+}

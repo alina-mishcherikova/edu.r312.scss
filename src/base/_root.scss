@@ -1,0 +1,15 @@
+@use "variables" as *;
+:root {
+  --ff-sans: #{$ff-lexend};
+  @each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+      --color-#{$color}-#{$shade}: #{$value};
+    }
+  }
+  @each $font, $value in $fonts {
+    --fs-#{$font}: #{$value};
+  }
+  @each $size, $value in $sizes {
+    --s-#{$size}: #{$value};
+  }
+}
