@@ -8,4 +8,7 @@
     width: var(--s-20);
     fill: var(--color-accent-bleu);
   }
+  &:hover {
+    background-color: var(--color-white-300);
+  }
 }
